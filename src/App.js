@@ -25,6 +25,7 @@ function App() {
           type='text'
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
+          placeholder='Search for a word ...'
         />
         <button type='submit' onClick={searchHandle}>Search</button>
       </div>
