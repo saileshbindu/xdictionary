@@ -12,6 +12,11 @@ function App() {
   ];
 
   const searchHandle = () => {
+    if (inputVal.trim() === '') {
+      setResult('Word not found in the dictionary.');
+      return;
+    }
+
     const foundData = dictionary.find(ele => ele.word.toLowerCase() === inputVal.toLowerCase());
     setResult(foundData ? foundData.meaning : 'Word not found in the dictionary.')
     setInputVal('');
@@ -31,7 +36,7 @@ function App() {
       </div>
       <p><strong>Definition: </strong></p>
       <p>
-        {result || ''}
+        {result}
       </p>
     </div>
   );
