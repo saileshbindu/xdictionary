@@ -34,10 +34,8 @@ function App() {
         />
         <button type='submit' onClick={searchHandle}>Search</button>
       </div>
-      <p><strong>Definition: </strong></p>
-      <p>
-        {result}
-      </p>
+      <p><strong>Definition: {result}</strong></p>
+   
     </div>
   );
 }
