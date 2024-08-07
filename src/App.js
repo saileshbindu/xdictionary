@@ -19,7 +19,7 @@ function App() {
 
     const foundData = dictionary.find(ele => ele.word.toLowerCase() === inputVal.toLowerCase());
     setResult(foundData ? foundData.meaning : 'Word not found in the dictionary.')
-    setInputVal('');
+  
   };
 
   return (
